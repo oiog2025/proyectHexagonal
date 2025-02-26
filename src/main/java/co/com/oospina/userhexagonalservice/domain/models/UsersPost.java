@@ -5,4 +5,4 @@ public record UsersPost(
         Long id,
         String title,
         String body
-){}
+) {}
