@@ -1,9 +1,11 @@
 package co.com.oospina.userhexagonalservice.application.dto.users;
 
 public record UsersDto(
-        Integer id,
-        String email,
-        Boolean active,
-        Integer thirdPartyId,
-        String channel
+        Long id,
+        String country,
+        String first_name,
+        String last_name,
+        String password,
+        String rol,
+        String username
 ) {}
