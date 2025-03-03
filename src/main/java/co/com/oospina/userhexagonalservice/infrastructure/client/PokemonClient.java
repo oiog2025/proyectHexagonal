@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 public class PokemonClient implements IGetPokemonByIdOutput {
 
     private final RestTemplate restTemplate;
-
     //TODO consumo del cliente pokemon https://pokeapi.co/api/v2/berry/1
     @Override
     public PokemonDto getPokemonById(Long id) {
