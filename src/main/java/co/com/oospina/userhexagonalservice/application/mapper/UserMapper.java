@@ -16,4 +16,9 @@ public class UserMapper {
     public static UsersDto toUserDto(UserEntity userEntity) {
         return new UsersDto(userEntity.getId(), userEntity.getCountry(), userEntity.getFirstName(), userEntity.getLastName(), userEntity.getPassword(), userEntity.getRol(), userEntity.getUsername());
     }
+
+    public static UserEntity toUserEntity(UsersDto usersDto) {
+        return new UserEntity(usersDto.id(), usersDto.country(), usersDto.first_name(), usersDto.last_name(), usersDto.password(), usersDto.rol(), usersDto.username());
+    }
+
 }

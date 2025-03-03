@@ -1,7 +1,6 @@
 package co.com.oospina.userhexagonalservice.infrastructure.jpa;
 
 import co.com.oospina.userhexagonalservice.application.dto.users.UsersDto;
-import co.com.oospina.userhexagonalservice.application.mapper.MappersUser;
 import co.com.oospina.userhexagonalservice.application.mapper.UserMapper;
 import co.com.oospina.userhexagonalservice.application.port.output.IGetUsersByIdOutput;
 import co.com.oospina.userhexagonalservice.infrastructure.jpa.repositories.UserRepository;

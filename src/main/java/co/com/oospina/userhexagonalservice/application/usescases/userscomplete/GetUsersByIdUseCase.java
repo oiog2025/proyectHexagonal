@@ -1,4 +1,4 @@
-package co.com.oospina.userhexagonalservice.application.usescases;
+package co.com.oospina.userhexagonalservice.application.usescases.userscomplete;
 
 import co.com.oospina.userhexagonalservice.application.mapper.UserMapper;
 import co.com.oospina.userhexagonalservice.application.port.input.IGetUserByIdInput;

@@ -1,4 +1,4 @@
-package co.com.oospina.userhexagonalservice.application.services;
+package co.com.oospina.userhexagonalservice.application.services.usercomplete;
 
 import co.com.oospina.userhexagonalservice.application.dto.users.UserCompleteDto;
 
