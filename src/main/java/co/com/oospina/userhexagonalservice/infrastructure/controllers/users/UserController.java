@@ -5,10 +5,7 @@ import co.com.oospina.userhexagonalservice.application.dto.users.UsersDto;
 import co.com.oospina.userhexagonalservice.application.services.user.IUsers;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
@@ -20,6 +17,11 @@ public class UserController {
     @GetMapping("/{id}")
     public ResponseEntity<UsersDto> getUsers(@PathVariable Long id) {
         return ResponseEntity.ok(iUsers.getUsersById(id));
+    }
+
+    @PostMapping()
+    public ResponseEntity<UsersDto> saveUser(@RequestBody UsersDto usersDto) throws Exception {
+        return ResponseEntity.ok(iUsers.saveUser(usersDto));
     }
 
 }

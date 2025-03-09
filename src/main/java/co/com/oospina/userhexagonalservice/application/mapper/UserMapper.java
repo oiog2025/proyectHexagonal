@@ -10,7 +10,8 @@ public class UserMapper {
     }
 
     public static Users toUsers(UsersDto usersDto) {
-        return new Users(usersDto.id(), usersDto.country(), usersDto.first_name(), usersDto.last_name(), usersDto.password(), usersDto.rol(), usersDto.username());
+        return new Users(usersDto.getId(), usersDto.getCountry(), usersDto.getFirst_name(), usersDto.getLast_name(),
+                usersDto.getPassword(), usersDto.getRol(), usersDto.getUsername());
     }
 
     public static UsersDto toUserDto(UserEntity userEntity) {
@@ -18,7 +19,8 @@ public class UserMapper {
     }
 
     public static UserEntity toUserEntity(UsersDto usersDto) {
-        return new UserEntity(usersDto.id(), usersDto.country(), usersDto.first_name(), usersDto.last_name(), usersDto.password(), usersDto.rol(), usersDto.username());
+        return new UserEntity(usersDto.getId(), usersDto.getCountry(), usersDto.getFirst_name(), usersDto.getLast_name(),
+                usersDto.getPassword(), usersDto.getRol(), usersDto.getUsername());
     }
 
 }
