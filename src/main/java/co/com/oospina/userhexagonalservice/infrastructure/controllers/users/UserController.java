@@ -17,7 +17,7 @@ public class UserController {
 
     @Transactional(readOnly = true)
     @GetMapping("/{id}")
-    public ResponseEntity<UsersDto> getUsers(@PathVariable Long id) {
+    public ResponseEntity<UsersDto> getUserById(@PathVariable Long id) {
         return ResponseEntity.ok(iUsers.getUsersById(id));
     }
 

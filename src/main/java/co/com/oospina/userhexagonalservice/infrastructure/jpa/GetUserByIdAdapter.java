@@ -21,6 +21,9 @@ public class GetUserByIdAdapter implements IGetUsersByIdOutput {
 
     @Override
     public UsersDto getUsersById(Long id) {
+        if (userRepository.findById(id).isEmpty()) {
+            throw new RuntimeException("El usuario no existe");
+        }
         return UserMapper.toUserDto(Objects.requireNonNull(userRepository.findById(id).orElse(null)));
     }
 }

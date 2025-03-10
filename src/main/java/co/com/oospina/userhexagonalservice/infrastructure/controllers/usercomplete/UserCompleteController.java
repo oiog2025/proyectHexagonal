@@ -17,7 +17,7 @@ public class UserCompleteController {
     private final IUsersComplete iUsersById;
 
     @GetMapping("/users/{id}")
-    public ResponseEntity<?> getUsersById(@PathVariable Long id) {
+    public ResponseEntity<?> getUserByIdAndPokemonId(@PathVariable Long id) {
         return ResponseEntity.ok(iUsersById.getUserComplete(id));
     }
 }

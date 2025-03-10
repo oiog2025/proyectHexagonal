@@ -1,6 +1,7 @@
-package co.com.oospina.userhexagonalservice.infrastructure.jpa.repositories;
+package co.com.oospina.userhexagonalservice.infrastructure.jpa;
 
 import co.com.oospina.userhexagonalservice.application.port.output.IDeleteUserByIdOutput;
+import co.com.oospina.userhexagonalservice.infrastructure.jpa.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
