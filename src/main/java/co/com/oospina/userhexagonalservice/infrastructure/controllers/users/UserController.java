@@ -43,7 +43,7 @@
 package co.com.oospina.userhexagonalservice.infrastructure.controllers.users;
 
 import co.com.oospina.userhexagonalservice.application.dto.users.UsersDto;
-import co.com.oospina.userhexagonalservice.application.services.user.IUsers;
+import co.com.oospina.userhexagonalservice.application.services.user.IUsersService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -60,7 +60,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "Usuarios", description = "API para gestionar usuarios")
 public class UserController {
 
-    private final IUsers iUsers;
+    private final IUsersService iUsers;
 
     @Operation(
             summary = "Obtener usuario por ID",

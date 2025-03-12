@@ -14,7 +14,7 @@ import static co.com.oospina.userhexagonalservice.utilities.EncryptPassword.encr
 
 @Component
 @AllArgsConstructor
-public class UserService implements IUsers {
+public class UserService implements IUsersService {
 
   private final GetUsersByIdUseCase getUsersByIdUseCase;
   private final SaveUserUseCase saveUserUseCase;
