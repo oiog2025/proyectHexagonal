@@ -14,16 +14,18 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class UserCompleteService implements IUsersComplete {
 
-private final GetUsersByIdUseCase getUsersByIdUseCase;
-private final GetPokemonByIdUseCase pokemonUseCase;
+  private final GetUsersByIdUseCase getUsersByIdUseCase;
+  private final GetPokemonByIdUseCase pokemonUseCase;
+
   public UserCompleteDto getUserComplete(Long id) {
 
     Users user = getUsersByIdUseCase.getUserById(id);
     Pokemon pokemon = pokemonUseCase.getPokemonById(id);
 
-    return new UserCompleteDto().builder()
-            .users(UserMapper.toUserDto(user))
-            .pokemon(PokemonMapper.toPokemonDto(pokemon))
-            .build();
+    return new UserCompleteDto()
+        .builder()
+        .users(UserMapper.toUserDto(user))
+        .pokemon(PokemonMapper.toPokemonDto(pokemon))
+        .build();
   }
 }
